@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Enemy_Skeleton : Enemy
 {
+
+
     #region State
     public SkeletonIdleState idleState {  get; private set; }
     public SkeletonMoveState moveState { get; private set; }
     public SkeletonBattleState battleState { get; private set; }
     public SkeletonAtkState atkState { get; private set; }
+    public SkeletonStunnedState stunnedState { get; private set; }
 
 
     #endregion
@@ -22,6 +25,7 @@ public class Enemy_Skeleton : Enemy
         moveState = new SkeletonMoveState(this, stateMachine, "Move", this);
         battleState = new SkeletonBattleState(this, stateMachine, "Move", this);
         atkState = new SkeletonAtkState(this, stateMachine, "Atk", this);
+        stunnedState = new SkeletonStunnedState(this, stateMachine, "Stunned", this);
     }
 
     protected override void Start()
@@ -33,6 +37,16 @@ public class Enemy_Skeleton : Enemy
     protected override void Update()
     {
         base.Update();
+
+    }
+    public override bool CheckCanBeStun()
+    {
+        if (base.CheckCanBeStun()) 
+        {
+            stateMachine.ChangeState(stunnedState);
+            return true;
+        }
+        return false;
     }
 }
 

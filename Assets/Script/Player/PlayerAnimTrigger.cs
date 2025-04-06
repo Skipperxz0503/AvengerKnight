@@ -9,4 +9,19 @@ public class PlayerAnimTrigger : MonoBehaviour
     {
         player.AnimTrigger();
     }
+    private void AtkTrigger()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(player.atkCheck.position, player.atkCheckRadius);
+        foreach(var hit in colliders)
+        {
+            if(hit.GetComponent<Enemy>() != null)
+            {
+                hit.GetComponent<Enemy>().Damage();
+            }
+        }
+    }
+    private void ThrowSword()
+    {
+        SkillManager.instance.sword.CreateSword();
+    }
 }

@@ -16,6 +16,7 @@ public class PlayerAtkState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        xInput = 0;
 
         if (comboCounter > 2 || Time.time >= lastTimeAtk + comboWindow) 
         {

@@ -15,7 +15,7 @@ public class SkeletonBattleState : EnemyState
     public override void Enter()
     {
         base.Enter();
-        player = GameObject.Find("Player").transform;   
+        player = PlayerManager.instance.player.transform;   
     }
 
     public override void Exit()
@@ -26,17 +26,31 @@ public class SkeletonBattleState : EnemyState
     public override void Update()
     {
         base.Update();
-        if (enemy.IsPlayerDetected()) 
+        if (enemy.IsPlayerDetected())
         {
-            if (enemy.IsPlayerDetected().distance < enemy.atkDistance) 
+            stateTimer = enemy.battleTime;
+
+            if (enemy.IsPlayerDetected().distance < enemy.atkDistance)
             {
                 if (CanAtk())
                 {
                     stateMachine.ChangeState(enemy.atkState);
                 }
-               
+
             }
         }
+        else
+        {
+            if (stateTimer < 0 || Vector2.Distance(player.transform.position, enemy.transform.position) > 7)
+            {
+                stateMachine.ChangeState(enemy.idleState);
+            }
+        }
+
+
+
+
+
 
         if (player.position.x > enemy.transform.position.x)
         {
