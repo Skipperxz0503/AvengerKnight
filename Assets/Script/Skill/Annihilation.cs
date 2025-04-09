@@ -54,4 +54,9 @@ public class Annihilation : Skill
         }
         return false;
     }
+    public float GetAnniRadius()
+    {
+        return maxSize / 2;
+    }
+
 }

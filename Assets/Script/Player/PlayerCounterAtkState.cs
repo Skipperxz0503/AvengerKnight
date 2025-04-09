@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerCounterAtkState : PlayerState
 {
+    private bool canCreateClone;
     public PlayerCounterAtkState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -11,6 +12,7 @@ public class PlayerCounterAtkState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        canCreateClone = true;
         stateTimer = player.counterDuration;
         player.anim.SetBool("AtkCountered",false);
     }
@@ -33,6 +35,12 @@ public class PlayerCounterAtkState : PlayerState
                 {
                     stateTimer = 10;
                     player.anim.SetBool("AtkCountered", true);
+
+                    if (canCreateClone)
+                    {
+                        canCreateClone = false;
+                        player.skill.clone.CreateCloneOnCounterAtk(hit.transform);
+                    }
                 }
             }
         }

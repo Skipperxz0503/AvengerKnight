@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 
 public class PlayerAtkState : PlayerState
 {
-    private int comboCounter;
+    public int comboCounter {  get; private set; }
     private float lastTimeAtk;
     private float comboWindow = 2;
 

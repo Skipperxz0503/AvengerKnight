@@ -1,6 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class SwordController : MonoBehaviour
@@ -10,7 +9,7 @@ public class SwordController : MonoBehaviour
     private CircleCollider2D cd;
     private Player player;
     private bool canRotate = true;
-    private bool isReturning ;
+    private bool isReturning;
 
     private float freezeTimeDuration;
     private float returnSpeed = 13;
@@ -57,12 +56,12 @@ public class SwordController : MonoBehaviour
         returnSpeed = _returnSpeed;
         rb.velocity = _dir;
         rb.gravityScale = _gravityScale;
-        if(pierceAmount <=0)
+        if (pierceAmount <= 0)
         {
             anim.SetBool("Rotation", true);
-        } 
-        
-        spinDir = Mathf.Clamp(rb.velocity.x, -1,1);
+        }
+
+        spinDir = Mathf.Clamp(rb.velocity.x, -1, 1);
 
         Invoke("DestroyMe", 7);
 
@@ -207,8 +206,15 @@ public class SwordController : MonoBehaviour
 
     private void SwordSkillDame(Enemy enemy)
     {
-        enemy.Damage();
-        enemy.StartCoroutine("FreezeTimeFor", freezeTimeDuration);
+        player.stats.DoDamage(enemy.GetComponent<CharacterStats>());
+        enemy.ImmobilizedFor(freezeTimeDuration);
+        //enemy.StartCoroutine("FreezeTimeFor", freezeTimeDuration);
+        ItemData_Equipment amuletEquiped = Inventory.instance.GetEquipment(EquipmentType.Amulet);
+
+        if (amuletEquiped != null)
+        {
+            amuletEquiped.Effect(enemy.transform);
+        }
     }
 
     private void SetupBounceTarget(Collider2D collision)
@@ -234,9 +240,9 @@ public class SwordController : MonoBehaviour
         if (pierceAmount > 0 && collision.GetComponent<Enemy>() != null)
         {
             pierceAmount--;
-            return ;
+            return;
         }
-        if(isSpinning) 
+        if (isSpinning)
         {
             if (!wasStopped)
             {
@@ -252,7 +258,7 @@ public class SwordController : MonoBehaviour
 
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
 
-        if (isBouncing && enemyTarget.Count > 0) 
+        if (isBouncing && enemyTarget.Count > 0)
         {
             return;
         }

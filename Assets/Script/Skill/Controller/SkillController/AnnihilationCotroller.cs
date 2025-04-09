@@ -93,7 +93,7 @@ public class AnnihilationCotroller : MonoBehaviour
         }
         canCloneAtk = true;
         canCreateHotKey = false;
-        PlayerManager.instance.player.MakeTransparent(true);
+        PlayerManager.instance.player.fx.MakeTransparent(true);
     }
 
     private void CloneAtkLogic()
@@ -112,8 +112,16 @@ public class AnnihilationCotroller : MonoBehaviour
             {
                 xOffset = -2;
             }
+            if (SkillManager.instance.clone.crystalInsteadOfclone)
+            {
+                SkillManager.instance.crystal.CreateCrystal();
+                SkillManager.instance.crystal.CurrenCrystalRandomTarget();
+            }
+            else
+            {
+               SkillManager.instance.clone.CreateClone(target[randomIndex], new Vector3(xOffset, 0));
 
-            SkillManager.instance.clone.CreateClone(target[randomIndex], new Vector3(xOffset, 0));
+            }
             atksAmount--;
             if (atksAmount <= 0)
             {
