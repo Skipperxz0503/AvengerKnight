@@ -33,5 +33,5 @@ MonoBehaviour:
   critPower: 0
   fireDame: 0
   iceDame: 0
-  lightningDame: 0
+  lightningDame: 15
   craftMaterials: []

@@ -5,10 +5,16 @@ using UnityEngine.EventSystems;
 
 public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler,IPointerExitHandler
 {
-    [SerializeField] private Image itemImage;
-    [SerializeField] private TextMeshProUGUI itemText;
+    [SerializeField] protected Image itemImage;
+    [SerializeField] protected TextMeshProUGUI itemText;
 
+    protected UI ui;
     public InventoryItem item;
+
+    protected virtual void Start()
+    {
+        ui = GetComponentInParent<UI>();
+    }
 
     public  void UpdateSlot(InventoryItem _newItem)
     {
@@ -51,15 +57,20 @@ public class UI_ItemSlot : MonoBehaviour, IPointerDownHandler, IPointerEnterHand
         }
         if (item.data.itemType == ItemType.Equipment)
             Inventory.instance.EquipItem(item.data);
+        ui.itemTooltip.HideToolTip();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Item info");
+        if (item == null)
+            return ;
+        ui.itemTooltip.ShowToolTip(item.data as ItemData_Equipment);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Item info hidden");
+        if (item == null)
+            return;
+        ui.itemTooltip.HideToolTip();
     }
 }

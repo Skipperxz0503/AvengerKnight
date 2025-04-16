@@ -45,6 +45,7 @@ public class ItemData_Equipment : ItemData
     [Header("Craft requirements")]
     public List<InventoryItem> craftMaterials;
 
+    private int minDescriptionLength;
 
 
 
@@ -99,5 +100,55 @@ public class ItemData_Equipment : ItemData
         playerStats.fireDame.Removemodifier(fireDame);
         playerStats.iceDame.Removemodifier(iceDame);
         playerStats.lightningDame.Removemodifier(lightningDame);
-    }    
+    }
+
+    public override string GetDescription()
+    {
+        sb.Length = 0;
+        minDescriptionLength = 0;
+        AddItemDescription(strength, "Strength");
+        AddItemDescription(agility, "Agility");
+        AddItemDescription(intelligence, "Intelligent");
+        AddItemDescription(vitality, "Vitality");
+
+        AddItemDescription(damage, "Damage");
+        AddItemDescription(critChance, "CritChance");
+        AddItemDescription(critPower, "CritPower");
+
+        AddItemDescription(maxHealth, "MaxHealth");
+        AddItemDescription(armor, "Armor");
+        AddItemDescription(evasion, "Evasion");
+        AddItemDescription(magicResist, "MagicResist");
+
+        AddItemDescription(fireDame, "FireDame");
+        AddItemDescription(iceDame, "IceDame");
+        AddItemDescription(lightningDame, "LightningDame");
+
+        if (minDescriptionLength < 5)
+        {
+            for (int i = 0; i < 5 - minDescriptionLength; i++)
+            {
+                sb.AppendLine();
+                sb.Append("");
+            }
+        }
+
+        return sb.ToString();
+    }
+
+    private void AddItemDescription(int _value, string _name)
+    {
+        if (_value != 0)
+        {
+            if (sb.Length > 0) 
+            {
+                sb.AppendLine();
+            }
+            if (_value > 0)
+            {
+                sb.Append("+ "+ _value + " " + _name);
+            }
+            minDescriptionLength++;
+        }
+    }
 }
