@@ -27,4 +27,6 @@ public class PlayerManager : MonoBehaviour
         money -= _price;
         return true; 
     }
+
+    public int CurrentSoulsAmmount() => money;
 }
