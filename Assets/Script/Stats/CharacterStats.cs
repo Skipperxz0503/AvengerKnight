@@ -72,7 +72,8 @@ public class CharacterStats : MonoBehaviour
     public int currentHealth;
 
     public System.Action onHealthChanged;
-    public bool isDead {  get; private set; }   
+    public bool isDead {  get; private set; }
+    public bool isExhausted;
 
 
     protected virtual void Start()
@@ -105,6 +106,17 @@ public class CharacterStats : MonoBehaviour
             ApplyIgniteDamage();
     }
 
+    public void BeExhaustedFor(float _duration)
+    {
+        StartCoroutine(ExhaustedFor(_duration));
+    }
+
+    private IEnumerator ExhaustedFor(float _duration)
+    {
+        isExhausted = true;
+        yield return new WaitForSeconds(_duration);
+        isExhausted = false;    
+    }
     public virtual void IncreaseStatBy(int _modifier, float _duration, Stat _statModify)
     {
         StartCoroutine(StatModCoroutine(_modifier, _duration, _statModify));
@@ -322,6 +334,8 @@ public class CharacterStats : MonoBehaviour
 
     protected virtual void DecreaseHealthBy(int _damage)
     {
+        if (isExhausted)
+            _damage = Mathf.RoundToInt(_damage * 1.3f);
         currentHealth -= _damage;
         if (onHealthChanged != null)
             onHealthChanged();
@@ -334,7 +348,7 @@ public class CharacterStats : MonoBehaviour
     }
 
     #region Stat calculate
-    private int CheckTargerArmor(CharacterStats _targetStats, int totalDamage)
+    protected int CheckTargerArmor(CharacterStats _targetStats, int totalDamage)
     {
         if (_targetStats.isChilled) 
         {
@@ -356,7 +370,12 @@ public class CharacterStats : MonoBehaviour
         totalMagicDame = Mathf.Clamp(totalMagicDame, 0, int.MaxValue);
         return totalMagicDame;
     }
-    private bool TargetCanAvoid(CharacterStats _targetStats)
+
+    public virtual void OnAtkEvade()
+    {
+
+    }
+    protected bool TargetCanAvoid(CharacterStats _targetStats)
     {
         int totalEvasion = _targetStats.evasion.GetValue() + _targetStats.agility.GetValue();
         if (isShocked)
@@ -365,12 +384,13 @@ public class CharacterStats : MonoBehaviour
         }
         if (Random.Range(0, 100) < totalEvasion)
         {
+            _targetStats.OnAtkEvade();
             return true;
         }
         return false;
     }
 
-    private bool CanCrit()
+    protected bool CanCrit()
     {
         int totalCritChance = critChance.GetValue() + agility.GetValue();
 
@@ -378,7 +398,7 @@ public class CharacterStats : MonoBehaviour
             return true;
         return false;
     }
-    private int CalculateCritDamage(int _damage)
+    protected int CalculateCritDamage(int _damage)
     {
         float totalCritPower = (critPower.GetValue() + strength.GetValue()) * .01f;
 

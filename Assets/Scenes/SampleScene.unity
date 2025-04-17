@@ -535,7 +535,31 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1732090057}
+  - {fileID: 1859653250}
+  - {fileID: 73157561}
+  - {fileID: 1848380255}
+  - {fileID: 1599654478}
+  - {fileID: 558874823}
+  - {fileID: 1304184176}
+  - {fileID: 1428360969}
+  - {fileID: 2113542881}
+  - {fileID: 337614569}
+  - {fileID: 264533125}
+  - {fileID: 1815961036}
+  - {fileID: 1355450485}
+  - {fileID: 889110173}
+  - {fileID: 1997586548}
+  - {fileID: 116689597}
+  - {fileID: 158922851}
+  - {fileID: 1282458997}
+  - {fileID: 2057751708}
+  - {fileID: 1382060513}
+  - {fileID: 1791154512}
+  - {fileID: 1488493657}
+  - {fileID: 1718031566}
+  - {fileID: 1728751704}
   m_Father: {fileID: 1122405448}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -557,7 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -909,17 +933,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73157560}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 500162799}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -278, y: -279}
+  m_AnchoredPosition: {x: -299, y: -266}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73157562
@@ -934,12 +958,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Kagebushin
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
-  shouldLocked: []
-  skillImg: {fileID: 0}
+  shouldUnlocked:
+  - {fileID: 1859653251}
+  shouldLocked:
+  - {fileID: 1848380256}
 --- !u!114 &73157563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,15 +1024,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1697646575, guid: 9c7355b0cb8a5024bba44738f70d9e74, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1374,17 +1401,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116689596}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1290120498}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 590, y: -76}
+  m_AnchoredPosition: {x: 569.00006, y: -62.999985}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &116689598
@@ -1399,12 +1426,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Healing parry
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 1282458998}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &116689599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1462,15 +1491,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -142833932, guid: 9c7355b0cb8a5024bba44738f70d9e74, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1736,17 +1765,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158922850}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1802143896}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 592, y: -210}
+  m_AnchoredPosition: {x: 570.99994, y: -197}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158922852
@@ -1761,12 +1790,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: '"Who''s the Real one"'
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 1282458998}
+  - {fileID: 116689598}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &158922853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1824,15 +1856,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1977101887, guid: 9c7355b0cb8a5024bba44738f70d9e74, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3269,17 +3301,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264533124}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 197776546}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42, y: -321}
+  m_AnchoredPosition: {x: -62.99999, y: -308}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264533126
@@ -3294,12 +3326,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Genjutsu
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 337614570}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &264533127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3357,15 +3391,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1698427825, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4487,17 +4521,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337614568}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 315245184}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44, y: -189}
+  m_AnchoredPosition: {x: -64.999985, y: -176}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337614570
@@ -4512,12 +4546,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Dodge
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked: []
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &337614571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4575,15 +4610,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1947572493, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5526,6 +5561,7 @@ MonoBehaviour:
   itemTooltip: {fileID: 2122049164}
   statsTooltip: {fileID: 644187172}
   craftWindow: {fileID: 1768677251}
+  skillTooltip: {fileID: 933448856}
 --- !u!1 &397652393
 GameObject:
   m_ObjectHideFlags: 0
@@ -12297,6 +12333,140 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 1
+--- !u!1 &439452129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439452130}
+  - component: {fileID: 439452131}
+  - component: {fileID: 439452132}
+  m_Layer: 5
+  m_Name: Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &439452130
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439452129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 933448857}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &439452131
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439452129}
+  m_CullTransparentMesh: 1
+--- !u!114 &439452132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439452129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 84bdc42b70bb5e54aa18bb33c1fa834e, type: 2}
+  m_sharedMaterial: {fileID: -8065883861848785263, guid: 84bdc42b70bb5e54aa18bb33c1fa834e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &441639768
 GameObject:
   m_ObjectHideFlags: 0
@@ -43155,17 +43325,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558874822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1765861777}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68, y: 53}
+  m_AnchoredPosition: {x: 47.00001, y: 65.999985}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &558874824
@@ -43180,12 +43350,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Crystal
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked: []
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &558874825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43243,15 +43414,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 623617516, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -47301,17 +47472,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889110172}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 377321350}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 385, y: -76}
+  m_AnchoredPosition: {x: 364.00006, y: -62.999985}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &889110174
@@ -47326,12 +47497,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 100
   skillName: '"Don''t blink"'
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 1355450486}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &889110175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47389,15 +47562,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -172230039, guid: 9c7355b0cb8a5024bba44738f70d9e74, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -47870,6 +48043,98 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923599485}
+  m_CullTransparentMesh: 1
+--- !u!1 &933448855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 933448857}
+  - component: {fileID: 933448859}
+  - component: {fileID: 933448858}
+  - component: {fileID: 933448856}
+  m_Layer: 5
+  m_Name: SkillTree_Tooltip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &933448856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933448855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32c28db5aaebb14199cd5561a46b438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillText: {fileID: 439452132}
+  skillName: {fileID: 1034977464}
+--- !u!224 &933448857
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933448855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 439452130}
+  - {fileID: 1034977466}
+  m_Father: {fileID: 1122405448}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 21.002, y: 242.501}
+  m_SizeDelta: {x: 1500, y: 185.122}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &933448858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933448855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1146079874, guid: 05cde80bbd6c9484e9d631b053c1e502, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &933448859
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933448855}
   m_CullTransparentMesh: 1
 --- !u!1 &947257951
 GameObject:
@@ -48728,6 +48993,8 @@ GameObject:
   - component: {fileID: 973118848}
   - component: {fileID: 973118849}
   - component: {fileID: 973118850}
+  - component: {fileID: 973118851}
+  - component: {fileID: 973118852}
   m_Layer: 0
   m_Name: SkillManager
   m_TagString: Untagged
@@ -48748,6 +49015,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 2
+  dashUnlockButton: {fileID: 1355450486}
+  cloneOnDashUnlockButton: {fileID: 889110174}
+  cloneOnArrivalUnlockButton: {fileID: 1997586549}
 --- !u!114 &973118845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48790,13 +49060,10 @@ MonoBehaviour:
   cooldown: 0
   clonePrefab: {fileID: 5082671756460272671, guid: 121fe93fcc684aa4eb3a1296b921fc9c, type: 3}
   cloneDuration: 2
-  canAtk: 1
-  createCloneOnDashStart: 1
-  createCloneOnDashOver: 1
-  canCreateCloneOnCounterAtk: 1
+  canAtk: 0
   chanceToDuplicate: 33
-  canDuplicateClone: 1
-  crystalInsteadOfclone: 1
+  canDuplicateClone: 0
+  crystalInsteadOfclone: 0
 --- !u!114 &973118848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48864,11 +49131,15 @@ MonoBehaviour:
   cooldown: 0
   crystalDuration: 2
   crystalPrefab: {fileID: 5152495717525682144, guid: 3419d0eae807dfb43b1cf2445d0268c6, type: 3}
+  unlockMirrageCrystalButton: {fileID: 1304184177}
   cloneInsteadOfCrystal: 0
-  canExplode: 1
-  canMoveToEnemy: 1
+  unlockExplodeCrystalButton: {fileID: 1428360970}
+  canExplode: 0
+  unlockMovingCrystalButton: {fileID: 2113542882}
+  canMoveToEnemy: 0
   moverSpeed: 15
-  canUseStack: 1
+  unlockMultiCrystalButton: {fileID: 1815961037}
+  canUseStack: 0
   stackAmount: 5
   multiStackCooldown: 4
   useTimeWindow: 2
@@ -48878,6 +49149,40 @@ MonoBehaviour:
   - {fileID: 5152495717525682144, guid: 3419d0eae807dfb43b1cf2445d0268c6, type: 3}
   - {fileID: 5152495717525682144, guid: 3419d0eae807dfb43b1cf2445d0268c6, type: 3}
   - {fileID: 5152495717525682144, guid: 3419d0eae807dfb43b1cf2445d0268c6, type: 3}
+  unlockCrystalButton: {fileID: 558874824}
+--- !u!114 &973118851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973118843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edfa9d22d8f3a3745b26baa15206bdf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0
+  parryUnlockedButton: {fileID: 1282458998}
+  healingParryUnlockedButton: {fileID: 116689598}
+  mirrageParryUnlockedButton: {fileID: 158922852}
+--- !u!114 &973118852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973118843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4bb6e587844eaf408b15e820fac6feb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0
+  unlockDodgeButton: {fileID: 337614570}
+  dodgeUnlocked: 0
+  unlockMirrageDodgeButton: {fileID: 264533126}
+  mirrageDodgeUnlocked: 0
 --- !u!1 &1003169161
 GameObject:
   m_ObjectHideFlags: 0
@@ -49048,6 +49353,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029924506}
   m_CullTransparentMesh: 1
+--- !u!1 &1034977463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034977466}
+  - component: {fileID: 1034977465}
+  - component: {fileID: 1034977464}
+  m_Layer: 5
+  m_Name: SkillName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1034977464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034977463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1034977465
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034977463}
+  m_CullTransparentMesh: 1
+--- !u!224 &1034977466
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034977463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 933448857}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 3.755, y: -25}
+  m_SizeDelta: {x: 343.974, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1066869245
 GameObject:
   m_ObjectHideFlags: 0
@@ -50033,30 +50472,7 @@ RectTransform:
   m_Children:
   - {fileID: 1310975975}
   - {fileID: 50395263}
-  - {fileID: 1732090057}
-  - {fileID: 1859653250}
-  - {fileID: 73157561}
-  - {fileID: 1848380255}
-  - {fileID: 1599654478}
-  - {fileID: 558874823}
-  - {fileID: 1304184176}
-  - {fileID: 1428360969}
-  - {fileID: 2113542881}
-  - {fileID: 337614569}
-  - {fileID: 264533125}
-  - {fileID: 1815961036}
-  - {fileID: 1355450485}
-  - {fileID: 889110173}
-  - {fileID: 1997586548}
-  - {fileID: 116689597}
-  - {fileID: 158922851}
-  - {fileID: 1282458997}
-  - {fileID: 2057751708}
-  - {fileID: 1382060513}
-  - {fileID: 1791154512}
-  - {fileID: 1488493657}
-  - {fileID: 1718031566}
-  - {fileID: 1728751704}
+  - {fileID: 933448857}
   m_Father: {fileID: 393448616}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -51682,17 +52098,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282458996}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 960470241}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 589, y: 53}
+  m_AnchoredPosition: {x: 567.99994, y: 65.999985}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282458998
@@ -51707,12 +52123,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Parry
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked: []
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1282458999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51770,15 +52187,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -242856119, guid: 9c7355b0cb8a5024bba44738f70d9e74, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -52387,17 +52804,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304184175}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 761234473}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -44, y: -67}
+  m_AnchoredPosition: {x: -64.999985, y: -54.000015}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1304184177
@@ -52412,12 +52829,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Mirrage explosion
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 558874824}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1304184178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52475,15 +52894,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1749389468, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -52874,17 +53293,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355450484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 564713323}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 387, y: 53}
+  m_AnchoredPosition: {x: 365.99994, y: 65.999985}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1355450486
@@ -52899,12 +53318,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 100
   skillName: Dash
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked: []
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1355450487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52962,15 +53382,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 290594708, guid: 9c7355b0cb8a5024bba44738f70d9e74, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -53421,17 +53841,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382060512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1502661039}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -165, y: 91}
+  m_AnchoredPosition: {x: -185.99998, y: 104.000015}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1382060514
@@ -53446,14 +53866,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Exhausted
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked:
   - {fileID: 1732090053}
   - {fileID: 2057751704}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1382060515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53511,15 +53932,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -76199950, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -53943,17 +54364,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428360968}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1029924507}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: -57}
+  m_AnchoredPosition: {x: 153.99995, y: -43.999985}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1428360970
@@ -53968,12 +54389,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: '"Ka-boom"'
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 558874824}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1428360971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54031,15 +54454,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1029527069, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -54463,15 +54886,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Piercing sword
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked:
   - {fileID: 1732090053}
   shouldLocked:
   - {fileID: 1791154508}
   - {fileID: 1718031567}
-  skillImg: {fileID: 0}
 --- !u!114 &1488493654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54529,15 +54953,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 388419397, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -54561,17 +54985,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488493652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 958544275}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -471.44, y: -46}
+  m_AnchoredPosition: {x: -492.44, y: -32.999985}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1502661038
@@ -55761,6 +56185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2069226153}
+  money: 500
 --- !u!4 &1584841616
 Transform:
   m_ObjectHideFlags: 0
@@ -55803,17 +56228,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599654477}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1893756420}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -622, y: -320}
+  m_AnchoredPosition: {x: -643, y: -307.00003}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599654479
@@ -55828,12 +56253,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Annihilation - Ultimate
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 1728751705}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1599654480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55891,15 +56318,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -354984904, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -57234,17 +57661,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718031565}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 571716899}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -624, y: -46}
+  m_AnchoredPosition: {x: -645, y: -32.999985}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1718031567
@@ -57259,15 +57686,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Saw
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked:
   - {fileID: 1732090053}
   shouldLocked:
   - {fileID: 1488493653}
   - {fileID: 1791154508}
-  skillImg: {fileID: 0}
 --- !u!114 &1718031568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57325,15 +57753,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 305479155, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -57502,17 +57930,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728751703}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1273554995}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -611.9, y: -167.7}
+  m_AnchoredPosition: {x: -632.9001, y: -154.69998}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728751705
@@ -57527,12 +57955,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Mirage
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked: []
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1728751706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57590,15 +58019,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -515226638, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -57647,12 +58076,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Sword throwing
-  skillDes: 
+  skillDes: Throw sword in facing direction
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked: []
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1732090054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57710,15 +58140,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 654608816, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -57742,17 +58172,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732090052}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1429839017}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -471.437, y: 92.825}
+  m_AnchoredPosition: {x: -492.43704, y: 105.82498}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1733087739 stripped
@@ -58364,15 +58794,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Bouncy sword
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked:
   - {fileID: 1732090053}
   shouldLocked:
   - {fileID: 1488493653}
   - {fileID: 1718031567}
-  skillImg: {fileID: 0}
 --- !u!114 &1791154509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58430,15 +58861,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 230696639, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -58462,17 +58893,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791154507}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1171699581}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -318, y: -47}
+  m_AnchoredPosition: {x: -339.00006, y: -34.000015}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1802143895
@@ -58641,17 +59072,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815961035}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 771099832}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 173, y: -321}
+  m_AnchoredPosition: {x: 152.00008, y: -308}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1815961037
@@ -58666,12 +59097,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Thrill of the BOOM
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 558874824}
+  - {fileID: 1428360970}
+  - {fileID: 2113542882}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1815961038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58729,15 +59164,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 2101923798, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -59283,17 +59718,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848380254}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 834315360}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -460, y: -280}
+  m_AnchoredPosition: {x: -481.00003, y: -267}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1848380256
@@ -59308,12 +59743,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Time bomb
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
-  shouldLocked: []
-  skillImg: {fileID: 0}
+  shouldUnlocked:
+  - {fileID: 1859653251}
+  shouldLocked:
+  - {fileID: 73157562}
 --- !u!114 &1848380257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59371,15 +59809,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1426857149, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -59557,17 +59995,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859653249}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1621139249}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370, y: -166}
+  m_AnchoredPosition: {x: -391, y: -152.99998}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1859653251
@@ -59582,12 +60020,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Mirrage furry
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 1728751705}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1859653252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59645,15 +60085,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2081242161, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -61935,17 +62375,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997586547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 971343046}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 388, y: -210}
+  m_AnchoredPosition: {x: 366.99994, y: -197}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997586549
@@ -61960,12 +62400,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 300
   skillName: Mirage entrance
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 1355450486}
+  - {fileID: 889110174}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &1997586550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62023,15 +62466,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1466412119, guid: 9c7355b0cb8a5024bba44738f70d9e74, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -62609,13 +63052,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Immobilized
-  skillDes: 
+  skillDes: Immobile the enemy
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
   shouldUnlocked:
   - {fileID: 1732090053}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &2057751705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62673,15 +63117,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 145382331, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -62705,17 +63149,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057751703}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 180087273}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -317.7, y: 92.825}
+  m_AnchoredPosition: {x: -338.7, y: 105.82498}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2059264360
@@ -63392,17 +63836,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113542880}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1362502679}
-  m_Father: {fileID: 1122405448}
+  m_Father: {fileID: 50395263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: -189}
+  m_AnchoredPosition: {x: 153.99995, y: -176}
   m_SizeDelta: {x: 79.388, y: 71.441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2113542882
@@ -63417,12 +63861,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8ac0813fd2ca84eba32be0279f132b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skillCost: 0
   skillName: Destruction
   skillDes: 
+  lockedSkillColor: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
   unlocked: 0
-  shouldUnlocked: []
+  shouldUnlocked:
+  - {fileID: 558874824}
+  - {fileID: 1428360970}
   shouldLocked: []
-  skillImg: {fileID: 0}
 --- !u!114 &2113542883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63480,15 +63927,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3056603, g: 0.30162328, b: 0.30162328, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -773491615, guid: bdeaeacf91e805f449e7fa66d480d644, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

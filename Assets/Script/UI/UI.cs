@@ -14,6 +14,11 @@ public class UI : MonoBehaviour
     public UI_CraftWindow craftWindow;  
     public UI_SkillTooltip skillTooltip;
 
+
+    private void Awake()
+    {
+        SwitchTo(skillTreeUI);
+    }
     void Start()
     {
         SwitchTo(null);

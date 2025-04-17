@@ -36,10 +36,12 @@ public class PlayerCounterAtkState : PlayerState
                     stateTimer = 10;
                     player.anim.SetBool("AtkCountered", true);
 
+                    player.skill.parry.UseSkill(); // attemp to appy healing on parry
+
                     if (canCreateClone)
                     {
                         canCreateClone = false;
-                        player.skill.clone.CreateCloneOnCounterAtk(hit.transform);
+                        player.skill.parry.MirrageOnParry(hit.transform);
                     }
                 }
             }

@@ -207,7 +207,12 @@ public class SwordController : MonoBehaviour
     private void SwordSkillDame(Enemy enemy)
     {
         player.stats.DoDamage(enemy.GetComponent<CharacterStats>());
-        enemy.ImmobilizedFor(freezeTimeDuration);
+
+        if(player.skill.sword.immobilizedUnlocked)
+            enemy.ImmobilizedFor(freezeTimeDuration);
+
+        if(player.skill.sword.exhausedUnlocked)
+            enemy.GetComponent<Enemy_Stats>().BeExhaustedFor(2);
         //enemy.StartCoroutine("FreezeTimeFor", freezeTimeDuration);
         ItemData_Equipment amuletEquiped = Inventory.instance.GetEquipment(EquipmentType.Amulet);
 

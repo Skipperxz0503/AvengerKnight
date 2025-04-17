@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 public enum SwordType
 {
     Regular,
@@ -16,30 +17,39 @@ public class Sword : Skill
 {
     public SwordType swordType = SwordType.Regular;
     [Header("Bounce Info")]
+    [SerializeField] private UI_SkillTreeSlot bounceUnlockedButton;
+    //public bool bounceUnlocked { get; private set; }
     [SerializeField] private int bounceAmount;
     [SerializeField] private float bounceGravity;
     [SerializeField] private float bounceSpeed;
 
     [Header("Pierce Info")]
+    [SerializeField] private UI_SkillTreeSlot pierceUnlockedButton;
+    //public bool pierceUnlocked { get; private set; }
     [SerializeField] private int pierceAmount;
     [SerializeField] private float pierceGravity;
 
     [Header("Spin Info")]
+    [SerializeField] private UI_SkillTreeSlot sawUnlockedButton;
+    //public bool sawUnlocked { get; private set; }
     [SerializeField] private float dameCooldown;
     [SerializeField] private float maxDistance ;
     [SerializeField] private float spinDuration ;
     [SerializeField] private float spinGravity ;
 
-
-
-
     [Header("Skill info")]
+    [SerializeField] private UI_SkillTreeSlot swordUnlockedButton;
+    public bool swordUnlocked { get; private set; }
     [SerializeField] private GameObject swordPrefab;
     [SerializeField] private Vector2 launchForce;
     [SerializeField] private float swordGravity;
     [SerializeField] private float freezeTimeDuration;
     [SerializeField] private float returnSpeed;
 
+    [SerializeField] private UI_SkillTreeSlot immobilizedUnlockButton;
+    public bool immobilizedUnlocked {  get; private set; }
+    [SerializeField] private UI_SkillTreeSlot exhaustedUnlockButton;
+    public bool exhausedUnlocked {  get; private set; }
 
     private Vector2 finalDir;
 
@@ -56,6 +66,13 @@ public class Sword : Skill
         base.Start();
         GenDot();
         SetupGravity();
+        swordUnlockedButton.GetComponent<Button>().onClick.AddListener(UnlockSword);
+        bounceUnlockedButton.GetComponent<Button>().onClick.AddListener(UnlockBounce);
+        pierceUnlockedButton.GetComponent<Button>().onClick.AddListener(UnlockPierce);
+        sawUnlockedButton.GetComponent<Button>().onClick.AddListener(UnlockSaw);
+        immobilizedUnlockButton.GetComponent<Button>().onClick.AddListener(UnlockImmobilized);
+        exhaustedUnlockButton.GetComponent<Button>().onClick.AddListener(UnlockExhausted);
+
     }
 
     private void SetupGravity()
@@ -113,6 +130,44 @@ public class Sword : Skill
 
         DotsActive(false);
     }
+
+    private void UnlockImmobilized()
+    {
+        if(immobilizedUnlockButton.unlocked)
+            immobilizedUnlocked = true;
+    }
+    private void UnlockExhausted()
+    {
+        if (exhaustedUnlockButton.unlocked)
+            exhausedUnlocked = true;
+    }
+    private void UnlockSword()
+    {
+        if (swordUnlockedButton.unlocked)
+        {
+            swordType = SwordType.Regular;
+            swordUnlocked = true;
+        }
+    }
+
+    private void UnlockBounce()
+    {
+        if(bounceUnlockedButton.unlocked)
+            swordType = SwordType.Bounce;
+    }
+    private void UnlockPierce()
+    {
+        if (pierceUnlockedButton.unlocked)
+            swordType = SwordType.Pierce;
+    }
+    private void UnlockSaw()
+    {
+        if (sawUnlockedButton.unlocked)
+            swordType = SwordType.Spin;
+    }
+
+
+
     #region Aim setup
     public Vector2 AimDir()
     {

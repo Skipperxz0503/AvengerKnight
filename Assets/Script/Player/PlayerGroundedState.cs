@@ -22,12 +22,12 @@ public class PlayerGroundedState : PlayerState
     {
         base.Update();
 
-        if (Input.GetKeyDown(KeyCode.R)) 
+        if (Input.GetKeyDown(KeyCode.R) && player.skill.annihilation.anniUnlocked) 
         {
             stateMachine.changeState(player.annihilation);
         }
 
-        if (Input.GetKeyDown(KeyCode.F)) 
+        if (Input.GetKeyDown(KeyCode.F) && player.skill.parry.parryUnlocked) 
         { 
             stateMachine.changeState(player.counterAtk);
         }
@@ -46,7 +46,7 @@ public class PlayerGroundedState : PlayerState
         { 
             stateMachine.changeState(player.jumpState);
         }
-        if (Input.GetKeyDown(KeyCode.Mouse1) && HasNoSword())
+        if (Input.GetKeyDown(KeyCode.Mouse1) && HasNoSword() && player.skill.sword.swordUnlocked)
         {
             stateMachine.changeState(player.aimState);
         }

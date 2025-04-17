@@ -6,6 +6,8 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager instance;
     public Player player;
+
+    public int money;
     private void Awake()
     {
         if(instance != null)
@@ -16,5 +18,13 @@ public class PlayerManager : MonoBehaviour
         {
             instance = this;
         }
+    }
+
+    public bool Purchasable(int _price)
+    {
+        if(_price > money)
+            return false;
+        money -= _price;
+        return true; 
     }
 }

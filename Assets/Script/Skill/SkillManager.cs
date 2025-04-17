@@ -10,6 +10,8 @@ public class SkillManager : MonoBehaviour
     public Sword sword { get; private set; }
     public Annihilation annihilation { get; private set; }
     public Crystal crystal { get; private set; }
+    public Parry parry { get; private set; }
+    public Dodge dodge { get; private set; }
     private void Awake()
     {
         if (instance != null)
@@ -28,5 +30,7 @@ public class SkillManager : MonoBehaviour
         sword = GetComponent<Sword>();
         annihilation = GetComponent<Annihilation>();
         crystal = GetComponent<Crystal>();
+        parry = GetComponent<Parry>();
+        dodge = GetComponent<Dodge>();
     }
 }

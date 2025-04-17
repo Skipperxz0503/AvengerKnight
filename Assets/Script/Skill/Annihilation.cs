@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Annihilation : Skill
 {
+    [SerializeField] private UI_SkillTreeSlot anniUnlockedButton;
+    public bool anniUnlocked {  get; private set; }
     [SerializeField] private int atksAmount;
     [SerializeField] private float cloneCooldown;
     [SerializeField] private float anniDuration;
@@ -29,9 +32,15 @@ public class Annihilation : Skill
         currentAnnihilation.SetupAnnihilation(maxSize, growSpeed,shrinkSpeed,atksAmount,cloneCooldown, anniDuration);
     }
 
+    private void UnlockAnnihilation()
+    {
+        if (anniUnlockedButton.unlocked)
+            anniUnlocked = true;
+    }
     protected override void Start()
     {
         base.Start();
+        anniUnlockedButton.GetComponent<Button>().onClick.AddListener(UnlockAnnihilation);
     }
 
     protected override void Update()
