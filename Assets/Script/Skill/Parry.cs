@@ -28,6 +28,12 @@ public class Parry : Skill
         mirrageParryUnlockedButton.GetComponent<Button>().onClick.AddListener(UnlockMirrageParry);
 
     }
+    protected override void CheckUnlocked()
+    {
+        UnlockParry();
+        UnlockHealingParry();
+        UnlockMirrageParry();
+    }
     private void UnlockParry()
     {
         if (parryUnlockedButton.unlocked)

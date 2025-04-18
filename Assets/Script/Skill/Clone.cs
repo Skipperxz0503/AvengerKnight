@@ -41,6 +41,15 @@ public class Clone : Skill
         multipleUnlockedButton.GetComponent<Button>().onClick.AddListener(UnlockKagebushin);
         crystalUnlockedButton.GetComponent<Button>().onClick.AddListener(UnlockTimeBomb);
     }
+
+    protected override void CheckUnlocked()
+    {
+        UnlockCloneAtk();
+        UnlockKagebushin();
+        UnlockMirrageFurry();
+        UnlockTimeBomb();
+
+    }
     private void UnlockCloneAtk()
     {
         if (cloneAtkUnlockedButton.unlocked)

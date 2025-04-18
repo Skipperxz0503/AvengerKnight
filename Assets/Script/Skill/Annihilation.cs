@@ -32,6 +32,10 @@ public class Annihilation : Skill
         currentAnnihilation.SetupAnnihilation(maxSize, growSpeed,shrinkSpeed,atksAmount,cloneCooldown, anniDuration);
     }
 
+    protected override void CheckUnlocked()
+    {
+        UnlockAnnihilation();
+    }
     private void UnlockAnnihilation()
     {
         if (anniUnlockedButton.unlocked)

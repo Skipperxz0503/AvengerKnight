@@ -20,6 +20,13 @@ public class Dash : Skill
         cloneOnDashUnlockButton.GetComponent<Button>().onClick.AddListener(UnlockCloneOnDash);
         cloneOnArrivalUnlockButton.GetComponent<Button>().onClick.AddListener(UnlockCloneOnArrival);
     }
+
+    protected override void CheckUnlocked()
+    {
+        UnlockDash();
+        UnlockCloneOnDash();
+        UnlockCloneOnArrival();
+    }
     public override void UseSkill()
     {
         base.UseSkill();

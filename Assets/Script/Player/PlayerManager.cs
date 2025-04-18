@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviour, SaveManagerInterface
 {
     public static PlayerManager instance;
     public Player player;
@@ -29,4 +27,14 @@ public class PlayerManager : MonoBehaviour
     }
 
     public int CurrentSoulsAmmount() => money;
+
+    public void LoadData(GameData _data)
+    {
+        this.money = _data.soul;
+    }
+
+    public void SaveData(ref GameData _data)
+    {
+        _data.soul = this.money;
+    }
 }

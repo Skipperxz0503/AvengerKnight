@@ -131,6 +131,15 @@ public class Sword : Skill
         DotsActive(false);
     }
 
+    protected override void CheckUnlocked()
+    {
+        UnlockSword();
+        UnlockImmobilized();
+        UnlockExhausted();
+        UnlockPierce();
+        UnlockSaw();
+        UnlockBounce();
+    }
     private void UnlockImmobilized()
     {
         if(immobilizedUnlockButton.unlocked)
